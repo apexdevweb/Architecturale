@@ -116,7 +116,8 @@ main .main__about .about__container .about__txt--description {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1.2rem;
   width: 90ch;
-  color: rgba(163, 139, 139, 0.872);
+  color: #000;
+  backdrop-filter: blur(5px);
   letter-spacing: 1px;
 }
 main .main__gallery {
@@ -126,15 +127,24 @@ main .main__gallery {
   justify-content: space-evenly;
 }
 main .main__gallery .gallery__item {
-  height: 40vh;
-  width: 45vw;
+  height: 30vh;
+  width: 35vw;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
-  background: rgba(163, 139, 139, 0.872) url("../images/papper2.png") no-repeat 50% 50%;
+  background: rgba(163, 139, 139, 0.872) url("../images/papper2_white_lines.png") no-repeat 50% 50%;
   background-size: cover;
+  border-radius: 10px;
+}
+main .main__gallery .gallery__item .gallery__item--txt {
+  width: 25ch;
+  font-size: 1.2rem;
+  color: #000;
+  letter-spacing: 1px;
+  font-family: "Roboto Flex", sans-serif;
+  text-shadow: 0px 0px 2px #000;
 }
 main .main__gallery .gallery__item .gallery__item--sub-container {
   height: auto;
@@ -145,9 +155,19 @@ main .main__gallery .gallery__item .gallery__item--sub-container {
   justify-content: center;
 }
 main .main__gallery .gallery__item .gallery__item--sub-container picture {
-  height: 25vh;
-  width: 35vw;
+  height: 20vh;
+  width: 20vw;
   overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main__gallery .gallery__item .gallery__item--sub-container picture img {
+  height: auto;
+  width: 20vw;
+  border-radius: 10px;
+  filter: contrast(140%);
 }
 
 /*# sourceMappingURL=main.css.map */
