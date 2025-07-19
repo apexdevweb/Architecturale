@@ -1,0 +1,146 @@
+@use "abstracts/_functions.scss";
+@use "abstracts/_mixins.scss";
+@use "abstracts/_placeholders.scss";
+@use "abstracts/_variables.scss";
+@use "base/_typo.scss";
+@use "components/cards.scss";
+@use "layout/grid.scss";
+//↓dossier pages↓
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@use "pages/home.scss";
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background: url("../images/papper4.png") no-repeat center center;
+  background-size: 50%;
+  & .header__title {
+    font-size: 3rem;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 8px;
+    font-weight: 600;
+  }
+  & .header__sub--title {
+    font-size: 1.7rem;
+    font-family: "Roboto Flex", sans-serif;
+    letter-spacing: 2px;
+  }
+  & .header__nav {
+    min-height: 15vh;
+    width: 100%;
+    background: rgba(163, 139, 139, 0.872) url("../images/papper5.png")
+      no-repeat 0% 80%;
+    background-size: 37%;
+    & .header__nav--ul {
+      height: auto;
+      width: 100%;
+      & .header__ul--item {
+        list-style-type: none;
+        & a {
+          font-family: "Roboto Flex", sans-serif;
+          font-size: 1.2rem;
+          color: #fff;
+          text-decoration: none;
+          letter-spacing: 1px;
+        }
+        & a:hover {
+          text-shadow: 0px 0px 3px #000;
+        }
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  & .main__home,
+  .main_about,
+  .main__gallery,
+  .main_contact {
+    height: auto;
+    width: 100%;
+  }
+  & .main__home {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    & .home__text--presentaion {
+      width: 55ch;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      font-family: "Roboto Flex", sans-serif;
+    }
+  }
+  & .main__about {
+    & .about__container {
+      height: 25vh;
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+      background:url("../images/papper3.png") no-repeat 100% 50%;
+      background-size: 60%;
+      & .about__title--container {
+        height: 25vh;
+        width: 100%;
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 1.7rem;
+        color: rgb(163, 139, 139, 0.872);
+        letter-spacing: 2px;
+      }
+      & .about__txt--description{
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 1.2rem;
+        width: 90ch;
+        color: rgb(163, 139, 139, 0.872);
+        letter-spacing: 1px;
+   
+      }
+    }
+  }
+  & .main__gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    & .gallery__item {
+      height: 40vh;
+      width: 45vw;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-around;
+      overflow: hidden;
+      background: rgba(163, 139, 139, 0.872) url("../images/papper2.png")
+        no-repeat 50% 50%;
+      background-size: cover;
+      & .gallery__item--sub-container {
+        height: auto;
+        width: 20vw;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        & picture {
+          height: 25vh;
+          width: 35vw;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
