@@ -67,6 +67,7 @@ header .header__nav .header__nav--ul .header__ul--item a {
 }
 header .header__nav .header__nav--ul .header__ul--item a:hover {
   text-shadow: 0px 0px 3px #000;
+  text-decoration: underline;
 }
 
 main {
@@ -76,9 +77,9 @@ main {
   justify-content: space-around;
 }
 main .main__home,
-main .main_about,
+main .main__about,
 main .main__gallery,
-main .main_contact {
+main .main__contact {
   height: auto;
   width: 100%;
 }
@@ -96,15 +97,16 @@ main .main__home .home__text--presentaion {
 }
 main .main__about .about__container {
   height: 25vh;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
   background: url("../images/papper3.png") no-repeat 100% 50%;
-  background-size: 60%;
+  background-size: 30%;
 }
 main .main__about .about__container .about__title--container {
+  text-align: center;
   height: 25vh;
   width: 100%;
   font-family: "Roboto Flex", sans-serif;
@@ -144,7 +146,7 @@ main .main__gallery .gallery__item .gallery__item--txt {
   color: #000;
   letter-spacing: 1px;
   font-family: "Roboto Flex", sans-serif;
-  text-shadow: 0px 0px 2px #000;
+  font-weight: 400;
 }
 main .main__gallery .gallery__item .gallery__item--sub-container {
   height: auto;
@@ -168,6 +170,69 @@ main .main__gallery .gallery__item .gallery__item--sub-container picture img {
   width: 20vw;
   border-radius: 10px;
   filter: contrast(140%);
+}
+main .main__gallery .gallery__item .gallery__item--sub-container figcaption {
+  font-size: 0.9rem;
+  color: #000;
+  letter-spacing: 1px;
+  font-family: "Roboto Flex", sans-serif;
+}
+main .main__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main__contact .main__contact--field {
+  height: auto;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+main .main__contact .main__contact--field legend {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000;
+  letter-spacing: 2px;
+  font-family: "Roboto Flex", sans-serif;
+}
+main .main__contact .main__contact--field form {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .main__contact .main__contact--field form .contact__form--sub-container {
+  margin: 3px;
+  height: 5vh;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: rgba(163, 139, 139, 0.872);
+}
+main .main__contact .main__contact--field form .contact__form--sub-container input[type=text] {
+  height: 3vh;
+  width: auto;
+  border-radius: 5px;
+  border: 0.5px solid #000;
+}
+main .main__contact .main__contact--field form .contact__form--sub-container input[type=email],
+main .main__contact .main__contact--field form .contact__form--sub-container input[type=tel] {
+  height: 3vh;
+  width: auto;
+  border-radius: 5px;
+  border: 0.5px solid #000;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  min-height: 15vh;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

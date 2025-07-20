@@ -1,7 +1,7 @@
+@use "abstracts/_variables.scss";
 @use "abstracts/_functions.scss";
 @use "abstracts/_mixins.scss";
 @use "abstracts/_placeholders.scss";
-@use "abstracts/_variables.scss";
 @use "base/_typo.scss";
 @use "components/cards.scss";
 @use "layout/grid.scss";
@@ -55,6 +55,7 @@ header {
         }
         & a:hover {
           text-shadow: 0px 0px 3px #000;
+          text-decoration: underline;
         }
       }
     }
@@ -66,9 +67,9 @@ main {
   align-items: center;
   justify-content: space-around;
   & .main__home,
-  .main_about,
+  .main__about,
   .main__gallery,
-  .main_contact {
+  .main__contact {
     height: auto;
     width: 100%;
   }
@@ -87,14 +88,15 @@ main {
   & .main__about {
     & .about__container {
       height: 25vh;
-      width: 100%;
+      width: 90%;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
       justify-content: space-evenly;
       background: url("../images/papper3.png") no-repeat 100% 50%;
-      background-size: 60%;
+      background-size: 30%;
       & .about__title--container {
+        text-align: center;
         height: 25vh;
         width: 100%;
         font-family: "Roboto Flex", sans-serif;
@@ -135,7 +137,7 @@ main {
         color: #000;
         letter-spacing: 1px;
         font-family: "Roboto Flex", sans-serif;
-        text-shadow: 0px 0px 2px #000;
+        font-weight: 400;
       }
       & .gallery__item--sub-container {
         height: auto;
@@ -159,7 +161,69 @@ main {
             filter: contrast(140%);
           }
         }
+        & figcaption {
+          font-size: 0.9rem;
+          color: #000;
+          letter-spacing: 1px;
+          font-family: "Roboto Flex", sans-serif;
+        }
       }
     }
   }
+  & .main__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .main__contact--field {
+      height: auto;
+      width: 90%;
+      overflow: hidden;
+      border-radius: 10px;
+      & legend {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #000;
+        letter-spacing: 2px;
+        font-family: "Roboto Flex", sans-serif;
+      }
+      & form {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        & .contact__form--sub-container {
+          margin: 3px;
+          height: 5vh;
+          width: 50%;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-evenly;
+          border-radius: 10px;
+          background-color: rgba(163, 139, 139, 0.872);
+          & input[type="text"] {
+            height: 3vh;
+            width: auto;
+            border-radius: 5px;
+            border: 0.5px solid #000;
+          }
+          & input[type="email"],
+          input[type="tel"] {
+            height: 3vh;
+            width: auto;
+            border-radius: 5px;
+            border: 0.5px solid #000;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  min-height: 15vh;
+  width: 100%;
 }
