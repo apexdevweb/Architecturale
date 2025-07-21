@@ -50,6 +50,7 @@ header .header__nav {
   width: 100%;
   background: rgba(163, 139, 139, 0.872) url("../images/papper5.png") no-repeat 0% 80%;
   background-size: 37%;
+  z-index: 99;
 }
 header .header__nav .header__nav--ul {
   height: auto;
@@ -68,6 +69,32 @@ header .header__nav .header__nav--ul .header__ul--item a {
 header .header__nav .header__nav--ul .header__ul--item a:hover {
   text-shadow: 0px 0px 3px #000;
   text-decoration: underline;
+}
+
+.back__to-top {
+  height: 50px;
+  width: 50px;
+  background: rgba(163, 139, 139, 0.872);
+  position: fixed;
+  margin-top: 20%;
+  margin-left: 95%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.back__to-top i {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.back__to-top:hover {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 3px #000);
 }
 
 main {
@@ -227,12 +254,47 @@ main .main__contact .main__contact--field form .contact__form--sub-container inp
   border-radius: 5px;
   border: 0.5px solid #000;
 }
+main .main__contact .main__contact--field form textarea {
+  margin: 3px;
+  height: auto;
+  width: 50%;
+  resize: none;
+  border-radius: 5px;
+}
+main .main__contact .main__contact--field form input[type=submit] {
+  margin: 3px;
+  height: 3vh;
+  width: auto;
+  border-radius: 5px;
+  border: 0.5px solid #000;
+}
+main .main__contact .main__contact--field form input[type=submit]:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #000;
+  color: #fff;
+}
 
 footer {
   position: relative;
+  top: 4vh;
   bottom: 0;
   min-height: 15vh;
   width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(163, 139, 139, 0.872);
+}
+footer .footer__signature--container {
+  height: auto;
+  width: 80%;
+}
+footer .footer__signature--container small {
+  font-size: 0.8rem;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
