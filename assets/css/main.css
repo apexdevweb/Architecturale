@@ -102,6 +102,7 @@ main {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
+  /**SVG***/
 }
 main .main__home,
 main .main__about,
@@ -163,7 +164,7 @@ main .main__gallery .gallery__item {
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
-  background: rgba(163, 139, 139, 0.872) url("../images/papper2_white_lines.png") no-repeat 50% 50%;
+  background: rgba(163, 139, 139, 0.872);
   background-size: cover;
   border-radius: 10px;
 }
@@ -272,6 +273,13 @@ main .main__contact .main__contact--field form input[type=submit]:hover {
   transition: 0.3s ease-in-out;
   background-color: #000;
   color: #fff;
+}
+main svg {
+  position: absolute;
+  z-index: -99;
+  height: auto;
+  width: 100%;
+  opacity: 0.3;
 }
 
 footer {

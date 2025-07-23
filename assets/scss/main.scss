@@ -83,8 +83,8 @@ header {
 }
 .back__to-top:hover {
   transition: 0.3s ease-in-out;
- cursor: pointer;
- filter: drop-shadow(0px 0px 3px #000);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 3px #000);
 }
 main {
   display: flex;
@@ -152,8 +152,7 @@ main {
       align-items: center;
       justify-content: space-around;
       overflow: hidden;
-      background: rgba(163, 139, 139, 0.872)
-        url("../images/papper2_white_lines.png") no-repeat 50% 50%;
+      background: rgba(163, 139, 139, 0.872);
       background-size: cover;
       border-radius: 10px;
       & .gallery__item--txt {
@@ -263,6 +262,14 @@ main {
         }
       }
     }
+  }
+  /**SVG***/
+  & svg {
+    position: absolute;
+    z-index: -99;
+    height: auto;
+    width: 100%;
+    opacity: 0.3;
   }
 }
 footer {
