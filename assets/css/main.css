@@ -25,6 +25,21 @@ body {
   padding: 0;
 }
 
+header .header__title {
+  font-size: 3rem;
+  font-family: "Outfit", sans-serif;
+}
+
+main .main__about .about__container .about__title--container, header .header__sub--title {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.7rem;
+}
+
+main .main__home .home__text--presentaion, header .header__nav .header__nav--ul .header__ul--item a {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.2rem;
+}
+
 header {
   margin: 0;
   padding: 0;
@@ -35,14 +50,10 @@ header {
   background-size: 50%;
 }
 header .header__title {
-  font-size: 3rem;
-  font-family: "Outfit", sans-serif;
   letter-spacing: 8px;
   font-weight: 600;
 }
 header .header__sub--title {
-  font-size: 1.7rem;
-  font-family: "Roboto Flex", sans-serif;
   letter-spacing: 2px;
 }
 header .header__nav {
@@ -60,8 +71,6 @@ header .header__nav .header__nav--ul .header__ul--item {
   list-style-type: none;
 }
 header .header__nav .header__nav--ul .header__ul--item a {
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
@@ -120,8 +129,6 @@ main .main__home {
 main .main__home .home__text--presentaion {
   width: 55ch;
   letter-spacing: 1px;
-  font-size: 1.2rem;
-  font-family: "Roboto Flex", sans-serif;
 }
 main .main__about .about__container {
   height: 25vh;
@@ -137,8 +144,6 @@ main .main__about .about__container .about__title--container {
   text-align: center;
   height: 25vh;
   width: 100%;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 1.7rem;
   color: rgba(163, 139, 139, 0.872);
   letter-spacing: 2px;
 }

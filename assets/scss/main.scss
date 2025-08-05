@@ -1,10 +1,10 @@
-@use "abstracts/_variables.scss";
 @use "abstracts/_functions.scss";
 @use "abstracts/_mixins.scss";
 @use "abstracts/_placeholders.scss";
 @use "base/_typo.scss";
 @use "components/cards.scss";
 @use "layout/grid.scss";
+@use "abstracts/_variables.scss";
 //↓dossier pages↓
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -16,6 +16,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
+%ft-fml-primary {
+  font-size: 3rem;
+  font-family: "Outfit", sans-serif;
+}
+%ft-fml-secondary {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.7rem;
+
+}
+%ft-fml-tertiary {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.2rem;
+}
+
 header {
   margin: 0;
   padding: 0;
@@ -25,14 +40,12 @@ header {
   background: url("../images/papper4.png") no-repeat center center;
   background-size: 50%;
   & .header__title {
-    font-size: 3rem;
-    font-family: "Outfit", sans-serif;
+    @extend %ft-fml-primary;
     letter-spacing: 8px;
     font-weight: 600;
   }
   & .header__sub--title {
-    font-size: 1.7rem;
-    font-family: "Roboto Flex", sans-serif;
+    @extend %ft-fml-secondary;
     letter-spacing: 2px;
   }
   & .header__nav {
@@ -48,8 +61,7 @@ header {
       & .header__ul--item {
         list-style-type: none;
         & a {
-          font-family: "Roboto Flex", sans-serif;
-          font-size: 1.2rem;
+          @extend %ft-fml-tertiary;
           color: #fff;
           text-decoration: none;
           letter-spacing: 1px;
@@ -106,8 +118,7 @@ main {
     & .home__text--presentaion {
       width: 55ch;
       letter-spacing: 1px;
-      font-size: 1.2rem;
-      font-family: "Roboto Flex", sans-serif;
+      @extend %ft-fml-tertiary;
     }
   }
   & .main__about {
@@ -124,8 +135,7 @@ main {
         text-align: center;
         height: 25vh;
         width: 100%;
-        font-family: "Roboto Flex", sans-serif;
-        font-size: 1.7rem;
+        @extend %ft-fml-secondary;
         color: rgb(163, 139, 139, 0.872);
         letter-spacing: 2px;
       }
