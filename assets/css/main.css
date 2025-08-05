@@ -18,26 +18,26 @@
     justify-content: space-evenly;
   }
 }
-*::before,
-*::after,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header .header__title {
   font-size: 3rem;
   font-family: "Outfit", sans-serif;
 }
 
-main .main__about .about__container .about__title--container, header .header__sub--title {
+header .header__sub--title, main .main__about .about__container .about__title--container {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1.7rem;
 }
 
-main .main__home .home__text--presentaion, header .header__nav .header__nav--ul .header__ul--item a {
+header .header__nav .header__nav--ul .header__ul--item a, main .main__home .home__text--presentaion {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1.2rem;
+}
+
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 header {

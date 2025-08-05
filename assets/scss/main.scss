@@ -1,10 +1,10 @@
 @use "abstracts/_functions.scss";
 @use "abstracts/_mixins.scss";
-@use "abstracts/_placeholders.scss";
 @use "base/_typo.scss";
 @use "components/cards.scss";
 @use "layout/grid.scss";
 @use "abstracts/_variables.scss";
+@use "abstracts/_placeholders.scss";
 //↓dossier pages↓
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -16,21 +16,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-%ft-fml-primary {
-  font-size: 3rem;
-  font-family: "Outfit", sans-serif;
-}
-%ft-fml-secondary {
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 1.7rem;
-
-}
-%ft-fml-tertiary {
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 1.2rem;
-}
-
 header {
   margin: 0;
   padding: 0;
