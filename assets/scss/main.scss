@@ -15,6 +15,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 header {
   margin: 0;
@@ -257,14 +258,6 @@ main {
         }
       }
     }
-  }
-  /**SVG***/
-  & svg {
-    position: absolute;
-    z-index: -99;
-    height: auto;
-    width: 100%;
-    opacity: 0.3;
   }
 }
 footer {
